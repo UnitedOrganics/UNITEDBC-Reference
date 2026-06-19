@@ -1,5 +1,5 @@
 attribute:
-  '@PhysicalName': ldw_isvisible
+  '@PhysicalName': ldw_IsVisible
   Type: bit
   Name: ldw_isvisible
   LogicalName: ldw_isvisible
