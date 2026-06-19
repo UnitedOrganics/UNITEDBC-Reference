@@ -1,0 +1,53 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 1
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{f8f2d381-f7b9-43ea-8d8d-c3af5af1813e}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': ldw_line
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': ldw_cartline2id
+        cell:
+        - '@name': ldw_line
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 4
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': ldw_cartline2
+        attribute:
+        - '@name': ldw_cartline2id
+        - '@name': ldw_line
+        - '@name': createdon
+        order:
+          '@attribute': ldw_line
+          '@descending': false
+        filter:
+        - '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+        - '@type': or
+          '@isquickfindfields': 1
+          condition:
+            '@attribute': ldw_line
+            '@operator': like
+            '@value': '{0}'
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Quick Find Active Cart Line 2
+      '@languagecode': 1033

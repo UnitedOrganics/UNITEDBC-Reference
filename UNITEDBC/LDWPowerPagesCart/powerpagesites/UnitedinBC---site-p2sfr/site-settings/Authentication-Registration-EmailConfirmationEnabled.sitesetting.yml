@@ -1,0 +1,4 @@
+﻿id: 2de2320d-8763-4fa4-999d-fca6dc719219
+name: Authentication/Registration/EmailConfirmationEnabled
+value: true
+websiteid: <SANITIZED_GUID>

@@ -1,0 +1,15 @@
+﻿displayorder: 15
+enablerating: false
+enabletracking: false
+excludefromsearch: false
+hiddenfromsitemap: true
+id: 72db3a22-7c8b-3e4f-58e5-8925a4e51c70
+isroot: true
+name: Cart Page
+pagetemplateid: 7167ad7a-3d9c-41da-801c-648e4ae0e006
+parentpageid: 4ada0128-3d83-4fcf-89e2-8f22749538fe
+partialurl: Cart-Page
+publishingstateid: 1593187c-176c-4086-babf-ddea18bc008b
+sharedpageconfiguration: false
+title: Cart Page
+websiteid: <SANITIZED_GUID>

@@ -1,0 +1,47 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 0
+  savedqueryid: '{ca2d92e4-b9a8-4bac-9121-c975e1d0e5b1}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': ldw_name
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': ldw_checkoutrequestid
+        cell:
+        - '@name': ldw_name
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': ldw_checkoutrequest
+        attribute:
+        - '@name': ldw_checkoutrequestid
+        - '@name': ldw_name
+        - '@name': createdon
+        order:
+          '@attribute': ldw_name
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 1
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Inactive Checkout Requests
+      '@languagecode': 1033

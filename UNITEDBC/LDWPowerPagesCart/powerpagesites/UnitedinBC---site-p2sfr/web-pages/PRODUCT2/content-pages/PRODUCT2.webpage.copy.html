@@ -1,0 +1,14 @@
+{% assign token = user | antiforgerytoken %}
+{% assign cleanContactId = user.contact.id | remove: '{' | remove: '}' %}
+
+<input type="hidden" id="pp-af" value="{{ token }}" />
+
+<script>
+  window.__pp = {
+    token: "{{ token }}",
+    contactId: "{{ cleanContactId }}"
+  };
+</script>
+
+<div id="catalog"></div>
+<div><p>3:41</p></div>

@@ -1,0 +1,60 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{f86ee4e0-5a24-463d-90ea-c715323d27e8}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': ldw_bcitemno
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': ldw_publicpriceid
+        cell:
+        - '@name': ldw_bcitemno
+          '@width': 300
+        - '@name': ldw_unitprice
+          '@width': 150
+        - '@name': ldw_currencycode
+          '@width': 150
+        - '@name': ldw_pricelistcode
+          '@width': 150
+        - '@name': ldw_uom
+          '@width': 150
+        - '@name': ldw_lastsyncutc
+          '@width': 150
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': ldw_publicprice
+        attribute:
+        - '@name': ldw_publicpriceid
+        - '@name': ldw_bcitemno
+        - '@name': createdon
+        - '@name': ldw_unitprice
+        - '@name': ldw_currencycode
+        - '@name': ldw_pricelistcode
+        - '@name': ldw_uom
+        - '@name': ldw_lastsyncutc
+        order:
+          '@attribute': ldw_bcitemno
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Active Public Price
+      '@languagecode': 1033

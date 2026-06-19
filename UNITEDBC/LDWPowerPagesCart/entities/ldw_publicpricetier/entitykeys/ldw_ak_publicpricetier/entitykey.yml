@@ -1,0 +1,16 @@
+EntityKey:
+  Name: ldw_AK_publicpricetier
+  LogicalName: ldw_ak_publicpricetier
+  IntroducedVersion: 1.0.0.0
+  IsCustomizable: 0
+  EntityKeyAttributes:
+    AttributeName:
+    - ldw_bc_itemno
+    - ldw_currencycode
+    - ldw_minqty
+    - ldw_pricelistcode
+    - ldw_uom
+  displaynames:
+    displayname:
+      '@description': AK_publicpricetier
+      '@languagecode': 1033

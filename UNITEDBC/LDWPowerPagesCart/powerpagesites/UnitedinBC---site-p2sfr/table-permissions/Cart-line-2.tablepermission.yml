@@ -1,0 +1,21 @@
+﻿accountrelationship: 
+adx_entitypermission_webrole:
+- bd34323d-4cf9-4c9f-afd4-c48343edb2f6
+append: true
+appendto: true
+childTablePermissions: []
+contactrelationship: 
+create: true
+delete: true
+entitylogicalname: ldw_cartline2
+entityname: Cart line 2
+filecontent: 
+id: fc9c4658-8636-f111-88b5-6045bdc497b8
+name: Cart line 2
+parententitypermission: 1aa107b3-87aa-484c-ad9d-18461a88f60d
+parentrelationship: ldw_cartline2_Cart_ldw_cart
+permissionfetchxml: 
+read: true
+scope: 756150003
+websiteid: <SANITIZED_GUID>
+write: true

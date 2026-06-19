@@ -1,0 +1,21 @@
+﻿accountrelationship: 
+adx_entitypermission_webrole:
+- bd34323d-4cf9-4c9f-afd4-c48343edb2f6
+append: true
+appendto: true
+childTablePermissions: []
+contactrelationship: 
+create: true
+delete: true
+entitylogicalname: ldw_checkoutrequest
+entityname: Checkout Request
+filecontent: 
+id: 092818d6-1438-f111-88b5-7ced8d3350b2
+name: Checkout Request
+parententitypermission: 
+parentrelationship: 
+permissionfetchxml: 
+read: true
+scope: 756150000
+websiteid: <SANITIZED_GUID>
+write: true

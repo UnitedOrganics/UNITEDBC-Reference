@@ -1,0 +1,8 @@
+﻿entityname: adx_webpage
+id: 0f46cf57-c8ad-4308-afda-5f0ff6086d77
+isdefault: false
+name: Search
+rewriteurl: ~/Pages/Search.aspx
+usewebsiteheaderandfooter: true
+websiteid: <SANITIZED_GUID>
+webtemplateid: d76e173f-67ab-44c5-a84e-baba47bc819b

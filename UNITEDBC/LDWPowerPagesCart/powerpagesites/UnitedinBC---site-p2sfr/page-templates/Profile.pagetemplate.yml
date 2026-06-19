@@ -1,0 +1,7 @@
+﻿entityname: adx_webpage
+id: a3ab24cc-6f38-472c-bb8b-c48c2a09a293
+isdefault: false
+name: Profile
+rewriteurl: ~/Pages/Profile.aspx
+usewebsiteheaderandfooter: true
+websiteid: <SANITIZED_GUID>

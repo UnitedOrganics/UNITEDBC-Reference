@@ -1,0 +1,47 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{f8660059-e2f7-4d8a-8411-4189721e4c23}'
+  layoutxml:
+    grid:
+      '@name': ldw_publicprices
+      '@jump': ldw_bcitemno
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': ldw_publicprice
+        '@id': ldw_publicpriceid
+        cell:
+        - '@name': ldw_bcitemno
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 2
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': ldw_publicprice
+        attribute:
+        - '@name': ldw_publicpriceid
+        - '@name': ldw_bcitemno
+        - '@name': createdon
+        order:
+          '@attribute': ldw_bcitemno
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Public Price Associated View
+      '@languagecode': 1033

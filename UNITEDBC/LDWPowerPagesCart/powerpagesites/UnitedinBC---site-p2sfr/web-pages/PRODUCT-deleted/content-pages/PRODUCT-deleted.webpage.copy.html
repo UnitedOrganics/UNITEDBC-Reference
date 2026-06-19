@@ -1,0 +1,185 @@
+<div class="row sectionBlockLayout text-start" style="min-height: auto; padding: 8px;">
+    <div class="container" style="display: flex; flex-wrap: wrap;">
+      <div class="col-lg-12 columnBlockLayout" style="padding: 16px; margin: 60px 0px; min-height: 200px;"></div>
+    
+
+
+{% assign token = user | antiforgerytoken %}
+<div id="cart">
+  <ul id="cart-lines"></ul>
+  <div class="total">Subtotal: $<span id="cart-subtotal">0.00</span></div>
+  <button id="checkout">Checkout</button>
+</div>
+
+
+<script>
+  async function renderCart(){
+    const cart = await getOrCreateActiveCart();
+    const q = encodeURIComponent(
+      `?$select=ldw_cartlineid,ldw_quantity,ldw_unitprice,ldw_lineamount,_ldw_product_value
+        &$filter=_ldw_cart_value eq ${cart.ldw_cartid}`
+    );
+    const r = await dvApi(`ldw_cartlines${q}`);
+
+    let subtotal = 0;
+    const rows = await Promise.all(r.value.map(async line => {
+      const qty = Number(line.ldw_quantity)||0;
+      const price = Number(line.ldw_unitprice)||0;
+      const amount = Number(line.ldw_lineamount)|| Number((qty*price).toFixed(2));
+      subtotal += amount;
+
+      // Get product name/sku (optional)
+      let label = '';
+      try {
+        const p = await dvApi(`dyn365bc_item_v2_0s(${line._ldw_product_value})?$select=displayName,number`);
+        label = `${p.displayName} (${p.number})`;
+      } catch(e){ label = 'Item'; }
+
+      return `<li>${label} — ${qty} × $${price.toFixed(2)} = $${amount.toFixed(2)}</li>`;
+    }));
+
+    document.getElementById("cart-lines").innerHTML = rows.join("");
+    document.getElementById("cart-subtotal").textContent = subtotal.toFixed(2);
+  }
+
+  // first render on load
+  document.addEventListener("DOMContentLoaded", renderCart);
+</script>
+
+
+
+
+
+
+
+<div id="catalog"></div>
+
+<script>
+  // ---- bootstrap ----
+  window.__pp = {
+    antiForgery: "{{ token }}",
+    contactId: "{{ user.contact.id }}",
+    flowUrl: "https://b08b058f4af2e6e3aebffa2b3be6a1.ca.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/8b8dfa975db74dd8a6d6cfe2bb2436fa/triggers/manual/paths/invoke?api-version=1"
+  };
+
+  async function dvApi(path, method="GET", body=null){
+    const res = await fetch(`/_api/${path}`, {
+      method,
+      headers: {
+        "Accept":"application/json",
+        "Content-Type":"application/json; charset=utf-8",
+        "RequestVerificationToken": window.__pp.antiForgery
+      },
+      body: body ? JSON.stringify(body) : null
+    });
+    if(!res.ok) throw new Error(await res.text());
+    return res.status === 204 ? null : res.json();
+  }
+
+  // ---- Active cart helpers ----
+  const CART_STATUS = { Active: 100000000, Converted: 100000001 };
+
+  async function getOrCreateActiveCart(){
+    const q = encodeURIComponent(
+      `?$select=ldw_cartid&$filter=_ldw_contact_value eq ${window.__pp.contactId} and ldw_status eq ${CART_STATUS.Active}&$top=1`
+    );
+    const r = await dvApi(`ldw_carts${q}`);
+    if (r.value.length) return r.value[0];
+    return dvApi("ldw_carts","POST",{
+      ldw_name:"Active Cart",
+      ldw_status: CART_STATUS.Active,
+      "ldw_Contact@odata.bind": `/contacts(${window.__pp.contactId})`
+    });
+  }
+
+  // ---- Add/merge line ----
+  async function addToCart(productId, unitPrice, qty=1){
+    const cart = await getOrCreateActiveCart();
+
+    // Is there already a line for this product?
+    const q = encodeURIComponent(
+      `?$select=ldw_cartlineid,ldw_quantity,ldw_unitprice&$filter=_ldw_cart_value eq ${cart.ldw_cartid} and _ldw_product_value eq ${productId}&$top=1`
+    );
+    const existing = await dvApi(`ldw_cartlines${q}`);
+
+    const price = Number(unitPrice)||0;
+    const addQty = Number(qty)||1;
+
+    if (existing.value.length){
+      const line = existing.value[0];
+      const newQty = Number(line.ldw_quantity||0) + addQty;
+      await dvApi(`ldw_cartlines(${line.ldw_cartlineid})`,'PATCH',{
+        ldw_quantity: newQty,
+        ldw_unitprice: price,
+        ldw_lineamount: Number((newQty*price).toFixed(2))
+      });
+    } else {
+      await dvApi("ldw_cartlines","POST",{
+        "ldw_Cart@odata.bind": `/ldw_carts(${cart.ldw_cartid})`,
+        "ldw_Product@odata.bind": `/dyn365bc_item_v2_0s(${productId})`,
+        ldw_quantity: addQty,
+        ldw_unitprice: price,
+        ldw_lineamount: Number((addQty*price).toFixed(2))
+      });
+    }
+    await renderCart();
+  }
+
+  // ---- Catalog ----
+  async function loadCatalog(){
+    // Adjust field names if your VT uses different labels
+    const q = encodeURIComponent(`?$select=dyn365bc_item_v2_0id,number,displayName,unitPrice&$top=100`);
+    const data = await dvApi(`dyn365bc_item_v2_0s${q}`);
+
+    const html = data.value.map(p => `
+      <div class="product">
+        <div class="name">${p.displayName}</div>
+        <div class="sku">${p.number}</div>
+        <div class="price">$${(Number(p.unitPrice)||0).toFixed(2)}</div>
+        <button data-id="${p.dyn365bc_item_v2_0id}" data-price="${p.unitPrice||0}" class="add">Add</button>
+      </div>
+    `).join("");
+    document.getElementById("catalog").innerHTML = html;
+
+    document.querySelectorAll("#catalog .add").forEach(btn=>{
+      btn.addEventListener("click", e=>{
+        const id = e.currentTarget.dataset.id;
+        const price = e.currentTarget.dataset.price;
+        addToCart(id, price, 1);
+      });
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", loadCatalog);
+</script>
+
+<script>
+  async function checkout(){
+    const cart = await getOrCreateActiveCart();
+    const res = await fetch(window.__pp.flowUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ cartId: cart.ldw_cartid, note: "" })
+    });
+    if(!res.ok){
+      const t = await res.text();
+      alert("Checkout failed: " + t);
+      return;
+    }
+    const data = await res.json(); // { orderNo, cartId }
+    alert(`Order placed: ${data.orderNo}`);
+    // TODO: redirect to Thank You page if you want
+    // window.location.href = "/thank-you/?orderno=" + encodeURIComponent(data.orderNo);
+  }
+
+  document.addEventListener("DOMContentLoaded", ()=>{
+    const btn = document.getElementById("checkout");
+    if (btn) btn.addEventListener("click", checkout);
+  });
+</script>
+
+
+   
+    </div>
+  </div>
+  

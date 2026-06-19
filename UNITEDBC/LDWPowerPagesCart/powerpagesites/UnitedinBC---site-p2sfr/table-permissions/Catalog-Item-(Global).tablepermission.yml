@@ -1,0 +1,15 @@
+﻿adx_entitypermission_webrole:
+- 1db45901-c342-4a95-a0f8-cb4729d7a7b9
+- bd34323d-4cf9-4c9f-afd4-c48343edb2f6
+append: false
+appendto: false
+create: false
+delete: false
+entitylogicalname: ldw_catalogitem
+entityname: Catalog Item (Global)
+id: 63b2c70b-59b8-f011-bbd3-7ced8da19090
+name: Catalog Item (Global)
+read: true
+scope: 756150000
+websiteid: <SANITIZED_GUID>
+write: false

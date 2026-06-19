@@ -1,0 +1,9 @@
+Entity:
+  Name:
+    '@LocalizedName': Product
+    '@OriginalName': Product
+    '#text': Product
+  EntityInfo:
+    entity:
+      '@Name': Product
+      '@unmodified': 1

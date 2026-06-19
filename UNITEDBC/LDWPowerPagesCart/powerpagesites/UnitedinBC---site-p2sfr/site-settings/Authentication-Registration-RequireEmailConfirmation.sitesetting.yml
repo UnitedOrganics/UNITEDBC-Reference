@@ -1,0 +1,4 @@
+﻿id: b9e72e86-8aa9-f011-bbd2-6045bde76031
+name: Authentication/Registration/RequireEmailConfirmation
+value: true
+websiteid: <SANITIZED_GUID>

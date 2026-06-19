@@ -1,0 +1,66 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{d4258479-6308-4060-a2f5-ececf3bf07ac}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': ldw_name
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': ldw_bcwebcategorymapid
+        cell:
+        - '@name': ldw_name
+          '@width': 300
+        - '@name': ldw_bcitemcategorycode
+          '@width': 150
+        - '@name': ldw_bcproductgroupcode
+          '@width': 150
+        - '@name': ldw_webdepartment
+          '@width': 150
+        - '@name': ldw_webcategory
+          '@width': 150
+        - '@name': ldw_defaultsortorder
+          '@width': 150
+        - '@name': ldw_defaultvisible
+          '@width': 150
+        - '@name': ldw_isactive
+          '@width': 150
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': ldw_bcwebcategorymap
+        attribute:
+        - '@name': ldw_bcwebcategorymapid
+        - '@name': ldw_name
+        - '@name': createdon
+        - '@name': ldw_bcitemcategorycode
+        - '@name': ldw_bcproductgroupcode
+        - '@name': ldw_webdepartment
+        - '@name': ldw_webcategory
+        - '@name': ldw_defaultsortorder
+        - '@name': ldw_defaultvisible
+        - '@name': ldw_isactive
+        order:
+          '@attribute': ldw_name
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Active BC Web Category Maps
+      '@languagecode': 1033

@@ -1,0 +1,26 @@
+<div class="container py-4">
+  <h1>Order Confirmation23</h1>
+
+  <div id="orderStatusLoading">Checking order status...</div>
+
+  <div id="orderStatusProcessing" style="display:none;">
+    <p>Your order is being processed.</p>
+    <p>Please wait...</p>
+  </div>
+
+  <div id="orderStatusCompleted" style="display:none;">
+    <p><strong>Order submitted successfully.</strong></p>
+    <p>Order No: <span id="orderNoText"></span></p>
+  </div>
+
+  <div id="orderStatusFailed" style="display:none;">
+    <p>We could not complete your order.</p>
+    <p id="orderErrorText"></p>
+    <a href="/CHECKOUT" class="btn btn-primary">Return to Checkout</a>
+  </div>
+
+  <div id="orderStatusMissing" style="display:none;">
+    <p>No order request was found for this cart.</p>
+    <a href="/CHECKOUT" class="btn btn-primary">Return to Checkout</a>
+  </div>
+</div>

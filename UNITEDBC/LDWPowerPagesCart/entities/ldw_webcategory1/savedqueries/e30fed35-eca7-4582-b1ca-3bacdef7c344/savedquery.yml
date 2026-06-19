@@ -1,0 +1,47 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 0
+  savedqueryid: '{e30fed35-eca7-4582-b1ca-3bacdef7c344}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': ldw_webcategoryname
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': ldw_webcategory1id
+        cell:
+        - '@name': ldw_webcategoryname
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': ldw_webcategory1
+        attribute:
+        - '@name': ldw_webcategory1id
+        - '@name': ldw_webcategoryname
+        - '@name': createdon
+        order:
+          '@attribute': ldw_webcategoryname
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 1
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Inactive Web Categories
+      '@languagecode': 1033

@@ -1,0 +1,47 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{2c1cfaf8-1706-4c3f-8034-b9fedd6aaefd}'
+  layoutxml:
+    grid:
+      '@name': ldw_cartline2s
+      '@jump': ldw_line
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': ldw_cartline2
+        '@id': ldw_cartline2id
+        cell:
+        - '@name': ldw_line
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 2
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': ldw_cartline2
+        attribute:
+        - '@name': ldw_cartline2id
+        - '@name': ldw_line
+        - '@name': createdon
+        order:
+          '@attribute': ldw_line
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Cart Line 2 Associated View
+      '@languagecode': 1033

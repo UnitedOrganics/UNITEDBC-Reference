@@ -1,0 +1,120 @@
+systemform:
+  formid: '{a19d9b55-83c5-4c88-b653-2bb43566f25b}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{c93eeb4b-c7b3-4614-aed3-6d0617fac9d9}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': General
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{114e2719-3024-4380-91a1-65236deb676c}'
+                labels:
+                  label:
+                    '@description': General
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{ce622c9b-3bae-4edf-87a8-0501239b8089}'
+                      labels:
+                        label:
+                          '@description': Line
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_line
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': ldw_line
+                  - cell:
+                      '@id': '{89f8088f-605c-4220-9891-ad155a7dd201}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                  - cell:
+                      '@id': '{ac521eb5-7cf9-489f-9647-219c3557b2f1}'
+                      labels:
+                        label:
+                          '@description': Cart
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_cart
+                        '@classid': '{270bd3db-d9af-4782-9025-509e298dec0a}'
+                        '@datafieldname': ldw_cart
+                  - cell:
+                      '@id': '{1d21fa07-e688-4299-8ab4-891ce9e979fd}'
+                      labels:
+                        label:
+                          '@description': Quantity
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_quantity
+                        '@classid': '{c3efe0c3-0ec6-42be-8349-cbd9079dfd8e}'
+                        '@datafieldname': ldw_quantity
+                  - cell:
+                      '@id': '{fd16e2dd-9762-49e7-941f-90208cb92179}'
+                      labels:
+                        label:
+                          '@description': Unit Price
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_unitprice
+                        '@classid': '{533b9e00-756b-4312-95a0-dc888637ac78}'
+                        '@datafieldname': ldw_unitprice
+                  - cell:
+                      '@id': '{fc7400e5-dc44-4f54-b1f7-b92429e1e8af}'
+                      labels:
+                        label:
+                          '@description': Line Amount
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_lineamount
+                        '@classid': '{c3efe0c3-0ec6-42be-8349-cbd9079dfd8e}'
+                        '@datafieldname': ldw_lineamount
+                  - cell:
+                      '@id': '{53a565b3-a26d-4db7-bdf3-e2e99272f5b0}'
+                      labels:
+                        label:
+                          '@description': BC Item Id
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_bcitemid
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': ldw_bcitemid
+                  - cell:
+                      '@id': '{037d4e1d-c0e3-49e2-8a8c-fa6014746086}'
+                      labels:
+                        label:
+                          '@description': BC Item DVID
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_bcitemdvid
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': ldw_bcitemdvid
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': A form for this entity.
+      '@languagecode': 1033

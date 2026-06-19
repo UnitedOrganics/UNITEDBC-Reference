@@ -1,0 +1,47 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 0
+  savedqueryid: '{e2bffff3-3a5b-40e7-8b87-39ae0ec98cd7}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': ldw_webdepartmentname
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': ldw_webdepartment1id
+        cell:
+        - '@name': ldw_webdepartmentname
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': ldw_webdepartment1
+        attribute:
+        - '@name': ldw_webdepartment1id
+        - '@name': ldw_webdepartmentname
+        - '@name': createdon
+        order:
+          '@attribute': ldw_webdepartmentname
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 1
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Inactive Web Departments
+      '@languagecode': 1033

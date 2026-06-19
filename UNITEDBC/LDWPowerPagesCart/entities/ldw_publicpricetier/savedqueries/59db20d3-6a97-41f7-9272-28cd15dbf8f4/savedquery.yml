@@ -1,0 +1,69 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{59db20d3-6a97-41f7-9272-28cd15dbf8f4}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': ldw_bc_itemno
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': ldw_publicpricetierid
+        cell:
+        - '@name': ldw_bc_itemno
+          '@width': 300
+        - '@name': ldw_uom
+          '@width': 150
+        - '@name': ldw_currencycode
+          '@width': 150
+        - '@name': ldw_pricelistcode
+          '@width': 150
+        - '@name': ldw_minqty
+          '@width': 150
+        - '@name': ldw_unitprice
+          '@width': 100
+        - '@name': ldw_lastsyncutc
+          '@width': 150
+        - '@name': ldw_priceincludingvat
+          '@width': 150
+        - '@name': ldw_isactive
+          '@width': 150
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': ldw_publicpricetier
+        attribute:
+        - '@name': ldw_publicpricetierid
+        - '@name': ldw_bc_itemno
+        - '@name': createdon
+        - '@name': ldw_uom
+        - '@name': ldw_currencycode
+        - '@name': ldw_pricelistcode
+        - '@name': ldw_minqty
+        - '@name': ldw_lastsyncutc
+        - '@name': ldw_priceincludingvat
+        - '@name': ldw_isactive
+        - '@name': ldw_unitprice
+        order:
+          '@attribute': ldw_bc_itemno
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Active Public Price Tiers
+      '@languagecode': 1033

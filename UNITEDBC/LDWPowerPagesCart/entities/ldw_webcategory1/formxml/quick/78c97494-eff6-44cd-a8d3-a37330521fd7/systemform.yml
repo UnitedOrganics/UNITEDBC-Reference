@@ -1,0 +1,56 @@
+systemform:
+  formid: '{78c97494-eff6-44cd-a8d3-a37330521fd7}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{707d65ac-aeb2-4c7a-802b-c70801ac1f56}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': ''
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{3faa2326-e73b-4afb-880a-c42c8c82041e}'
+                labels:
+                  label:
+                    '@description': GENERAL
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{8ceaa188-82a8-444d-9a24-693664c71ea9}'
+                      labels:
+                        label:
+                          '@description': Web Category Name
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_webcategoryname
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': ldw_webcategoryname
+                  - cell:
+                      '@id': '{041379a5-d649-4e8f-a808-91eac0693ce6}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033

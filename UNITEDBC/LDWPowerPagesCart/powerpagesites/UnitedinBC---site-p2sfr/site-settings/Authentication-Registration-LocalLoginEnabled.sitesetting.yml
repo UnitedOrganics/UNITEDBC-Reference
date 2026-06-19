@@ -1,0 +1,4 @@
+﻿id: ee2e5d93-1430-40af-a611-11b10bff4781
+name: Authentication/Registration/LocalLoginEnabled
+value: true
+websiteid: <SANITIZED_GUID>

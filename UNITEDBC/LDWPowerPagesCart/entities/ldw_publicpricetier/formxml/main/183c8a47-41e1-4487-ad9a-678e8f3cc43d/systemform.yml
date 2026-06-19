@@ -1,0 +1,130 @@
+systemform:
+  formid: '{183c8a47-41e1-4487-ad9a-678e8f3cc43d}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{5f25beb7-047f-40e4-a243-53cd2843dd6b}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': General
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{a5cc2f4b-cf9c-4bb9-b7d6-e7a61db86881}'
+                labels:
+                  label:
+                    '@description': General
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{0dba0386-8f9b-48aa-83db-43aa28a21ffa}'
+                      labels:
+                        label:
+                          '@description': BCItemNo
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_bc_itemno
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': ldw_bc_itemno
+                  - cell:
+                      '@id': '{d488cd7d-0ebb-43c5-9ea7-999faed112cc}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                  - cell:
+                      '@id': '{36cce4c6-e5df-4539-9251-a60fb9fcd9fc}'
+                      labels:
+                        label:
+                          '@description': UOM
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_uom
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': ldw_uom
+                  - cell:
+                      '@id': '{0a9534fa-d40e-409a-8f37-dad09757a7b0}'
+                      labels:
+                        label:
+                          '@description': Currency Code
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_currencycode
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': ldw_currencycode
+                  - cell:
+                      '@id': '{1d32dcbf-8373-4b02-a6e3-df42376f6df2}'
+                      labels:
+                        label:
+                          '@description': Price list Code
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_pricelistcode
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': ldw_pricelistcode
+                  - cell:
+                      '@id': '{6d5d2718-1673-46e3-86a2-32bf8d8632e2}'
+                      labels:
+                        label:
+                          '@description': Min Qty
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_minqty
+                        '@classid': '{c6d124ca-7eda-4a60-aea9-7fb8d318b68f}'
+                        '@datafieldname': ldw_minqty
+                  - cell:
+                      '@id': '{8e71863e-f127-4771-a75f-953269ee18c9}'
+                      labels:
+                        label:
+                          '@description': Last Sync UTC
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_lastsyncutc
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': ldw_lastsyncutc
+                  - cell:
+                      '@id': '{42e49697-1a62-4e23-b588-9d2bf981400a}'
+                      labels:
+                        label:
+                          '@description': Vat
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_priceincludingvat
+                        '@classid': '{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}'
+                        '@datafieldname': ldw_priceincludingvat
+                  - cell:
+                      '@id': '{8c19e71d-19e8-4c7e-a868-cfd63a6cd31e}'
+                      labels:
+                        label:
+                          '@description': Is Active
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_isactive
+                        '@classid': '{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}'
+                        '@datafieldname': ldw_isactive
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': A form for this entity.
+      '@languagecode': 1033

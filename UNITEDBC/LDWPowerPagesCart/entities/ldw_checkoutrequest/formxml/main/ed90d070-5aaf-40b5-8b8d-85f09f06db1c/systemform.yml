@@ -1,0 +1,110 @@
+systemform:
+  formid: '{ed90d070-5aaf-40b5-8b8d-85f09f06db1c}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{c8a9a4ed-5dca-4c41-b66b-c30914c004c9}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': General
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{876817b0-cfb7-4a02-9cad-0e2648f94af0}'
+                labels:
+                  label:
+                    '@description': General
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{54a66783-f324-4e9a-95ef-d57ea865d7b9}'
+                      labels:
+                        label:
+                          '@description': Name
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_name
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': ldw_name
+                  - cell:
+                      '@id': '{b4662043-8464-49f6-b812-714a13defd06}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                  - cell:
+                      '@id': '{3b9de357-68cb-41bf-9187-8fb857220f77}'
+                      labels:
+                        label:
+                          '@description': Cart
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_cart
+                        '@classid': '{270bd3db-d9af-4782-9025-509e298dec0a}'
+                        '@datafieldname': ldw_cart
+                  - cell:
+                      '@id': '{fb1e5dd8-1aa1-46d4-904a-ba13193c2add}'
+                      labels:
+                        label:
+                          '@description': Status
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_status
+                        '@classid': '{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}'
+                        '@datafieldname': ldw_status
+                  - cell:
+                      '@id': '{4e6d6858-c1eb-4b08-a32c-d87497b254be}'
+                      labels:
+                        label:
+                          '@description': Note
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_note
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': ldw_note
+                  - cell:
+                      '@id': '{b2795fbd-befa-4f79-959a-f437c0ee234b}'
+                      labels:
+                        label:
+                          '@description': Order No
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_orderno
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': ldw_orderno
+                  - cell:
+                      '@id': '{c1d7fcb7-ec6e-484e-b8b8-02a93e63bcc7}'
+                      labels:
+                        label:
+                          '@description': Error
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_error
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': ldw_error
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': A form for this entity.
+      '@languagecode': 1033

@@ -1,0 +1,14 @@
+﻿adx_entitypermission_webrole:
+- bd34323d-4cf9-4c9f-afd4-c48343edb2f6
+append: true
+appendto: true
+create: false
+delete: false
+entitylogicalname: contact
+entityname: Contact - AppendTo Cart
+id: 1cc99339-d0d3-f011-8543-7ced8db183a1
+name: Contact - AppendTo Cart
+read: true
+scope: 756150004
+websiteid: <SANITIZED_GUID>
+write: false

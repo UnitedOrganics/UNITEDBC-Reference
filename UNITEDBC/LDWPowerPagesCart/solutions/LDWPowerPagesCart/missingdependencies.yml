@@ -1,0 +1,788 @@
+MissingDependencies:
+  MissingDependency:
+  - Required:
+      '@type': 1
+      '@schemaName': adx_externalidentity
+      '@displayName': External Identity
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 1
+      '@schemaName': dyn365bc_item_v2_0
+      '@displayName': Item
+      '@solution': MicrosoftBusinessCentralERPVE (1.0.0.0)
+      package:
+        '@appName': Microsoft Business Central Virtual Table
+        '@version': 1.0.25316.1
+        '#text': MicrosoftBusinessCentralVEAnchor (1.0.25316.1)
+    Dependent:
+      '@type': 1
+      '@schemaName': dyn365bc_item_v2_0
+      '@displayName': Item
+  - Required:
+      '@type': 1
+      '@schemaName': dyn365bc_item_v2_0
+      '@displayName': Item
+      '@solution': MicrosoftBusinessCentralERPVE (1.0.0.0)
+      package:
+        '@appName': Microsoft Business Central Virtual Table
+        '@version': 1.0.25316.1
+        '#text': MicrosoftBusinessCentralVEAnchor (1.0.25316.1)
+    Dependent:
+      '@type': 29
+      '@displayName': CatalogueNightlyFill
+      '@id': '{df961fcb-8526-f111-88b4-6045bde5f52c}'
+  - Required:
+      '@type': 1
+      '@schemaName': dyn365bc_item_v2_0
+      '@displayName': Item
+      '@solution': MicrosoftBusinessCentralERPVE (1.0.0.0)
+      package:
+        '@appName': Microsoft Business Central Virtual Table
+        '@version': 1.0.25316.1
+        '#text': MicrosoftBusinessCentralVEAnchor (1.0.25316.1)
+    Dependent:
+      '@type': powerpagecomponent
+      '@id': '{5ef39f3d-a883-4d92-88c4-9a432972293c}'
+  - Required:
+      '@type': 1
+      '@schemaName': dyn365bc_item_v2_0
+      '@displayName': Item
+      '@solution': MicrosoftBusinessCentralERPVE (1.0.0.0)
+      package:
+        '@appName': Microsoft Business Central Virtual Table
+        '@version': 1.0.25316.1
+        '#text': MicrosoftBusinessCentralVEAnchor (1.0.25316.1)
+    Dependent:
+      '@type': powerpagecomponent
+      '@id': '{884860dd-413b-4769-8389-54ee78a5e6a7}'
+  - Required:
+      '@type': 1
+      '@schemaName': dyn365bc_item_v2_0
+      '@displayName': Item
+      '@solution': MicrosoftBusinessCentralERPVE (1.0.0.0)
+      package:
+        '@appName': Microsoft Business Central Virtual Table
+        '@version': 1.0.25316.1
+        '#text': MicrosoftBusinessCentralVEAnchor (1.0.25316.1)
+    Dependent:
+      '@type': powerpagecomponent
+      '@id': '{d18c6be0-f7a2-4c2c-aa20-d2aef6bc670d}'
+  - Required:
+      '@type': 1
+      '@schemaName': mspp_webrole
+      '@displayName': Web Role
+      '@solution': PowerPages_Apps (1.0.2603.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 1
+      '@schemaName': pricelevel
+      '@displayName': Price List
+      '@solution': msdynce_ProductManagement (9.0.4.0066)
+      package:
+        '@appName': msdynce_ProductManagement
+        '@version': 9.0.26043.10001
+        '#text': msdynce_ProductManagementAnchor (9.0.26043.10001)
+    Dependent:
+      '@type': 1
+      '@schemaName': pricelevel
+      '@displayName': Price List
+  - Required:
+      '@type': 1
+      '@schemaName': product
+      '@displayName': Product
+      '@solution': msdynce_ProductManagement (9.0.4.0066)
+      package:
+        '@appName': msdynce_ProductManagement
+        '@version': 9.0.26043.10001
+        '#text': msdynce_ProductManagementAnchor (9.0.26043.10001)
+    Dependent:
+      '@type': 1
+      '@schemaName': product
+      '@displayName': Product
+  - Required:
+      '@type': 10
+      '@schemaName': adx_contact_externalidentity
+      '@displayName': adx_contact_externalidentity
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_identity_accessfailedcount
+      '@displayName': Access Failed Count
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_identity_emailaddress1confirmed
+      '@displayName': Email Confirmed
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_identity_locallogindisabled
+      '@displayName': Local Login Disabled
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_identity_lockoutenabled
+      '@displayName': Lockout Enabled
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_identity_lockoutenddate
+      '@displayName': Lockout End Date
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_identity_logonenabled
+      '@displayName': Login Enabled
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_identity_mobilephoneconfirmed
+      '@displayName': Mobile Phone Confirmed
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_identity_securitystamp
+      '@displayName': Security Stamp
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_identity_twofactorenabled
+      '@displayName': Two Factor Enabled
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_identity_username
+      '@displayName': User Name
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_organizationname
+      '@displayName': Organization Name
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCoreDependencies (1.0.2305.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced) - Japanese
+      '@parentDisplayName': Contact
+      '@id': '{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_organizationname
+      '@displayName': Organization Name
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCoreDependencies (1.0.2305.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{bddc0100-0dbe-4562-aafe-31d08c8ab506}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_publicprofilecopy
+      '@displayName': Public Profile Copy
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced) - Japanese
+      '@parentDisplayName': Contact
+      '@id': '{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_publicprofilecopy
+      '@displayName': Public Profile Copy
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{bddc0100-0dbe-4562-aafe-31d08c8ab506}'
+  - Required:
+      '@type': 2
+      '@schemaName': adx_timezone
+      '@displayName': Time Zone
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCoreDependencies (1.0.2305.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 2
+      '@schemaName': defaultpricelevelid
+      '@displayName': Price List
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': msdynce_ProductManagement (9.0.4.0066)
+      package:
+        '@appName': msdynce_ProductManagement
+        '@version': 9.0.26043.10001
+        '#text': msdynce_ProductManagementAnchor (9.0.26043.10001)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 2
+      '@schemaName': mspp_userpreferredlcid
+      '@displayName': Preferred Language
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeExtensions (1.1.2501.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced) - Japanese
+      '@parentDisplayName': Contact
+      '@id': '{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}'
+  - Required:
+      '@type': 2
+      '@schemaName': mspp_userpreferredlcid
+      '@displayName': Preferred Language
+      '@parentSchemaName': contact
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeExtensions (1.1.2501.1)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{bddc0100-0dbe-4562-aafe-31d08c8ab506}'
+  - Required:
+      '@type': 2
+      '@schemaName': name
+      '@displayName': Name
+      '@parentSchemaName': pricelevel
+      '@parentDisplayName': Price List
+      '@solution': msdynce_ProductManagement (9.0.4.0066)
+      package:
+        '@appName': msdynce_ProductManagement
+        '@version': 9.0.26043.10001
+        '#text': msdynce_ProductManagementAnchor (9.0.26043.10001)
+    Dependent:
+      '@type': 10
+      '@schemaName': ldw_cart_PriceList_pricelevel
+      '@displayName': ldw_cart_PriceList_pricelevel
+      '@parentSchemaName': pricelevel
+      '@parentDisplayName': Price List
+  - Required:
+      '@type': 26
+      '@schemaName': Active Web Roles
+      '@displayName': Active Web Roles
+      '@parentSchemaName': mspp_webrole
+      '@parentDisplayName': Web Role
+      '@solution': PowerPages_Apps (1.0.2603.1)
+      '@id': '{735de4f0-c287-42eb-b5e6-2f01a75a40fb}'
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 26
+      '@schemaName': Active External Identities
+      '@displayName': Active External Identities
+      '@parentSchemaName': adx_externalidentity
+      '@parentDisplayName': External Identity
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      '@id': '{93fe9ed1-cabf-4755-9f63-4f3f989084e6}'
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 26
+      '@schemaName': Item Lookup View
+      '@displayName': Item Lookup View
+      '@parentSchemaName': dyn365bc_item_v2_0
+      '@parentDisplayName': Item
+      '@solution': MicrosoftBusinessCentralERPVE (1.0.0.0)
+      '@id': '{b66503e4-9eb6-571e-285f-f4a5f0c94408}'
+      package:
+        '@appName': Microsoft Business Central Virtual Table
+        '@version': 1.0.25316.1
+        '#text': MicrosoftBusinessCentralVEAnchor (1.0.25316.1)
+    Dependent:
+      '@type': powerpagecomponent
+      '@id': '{884860dd-413b-4769-8389-54ee78a5e6a7}'
+  - Required:
+      '@type': 26
+      '@schemaName': All Items
+      '@displayName': All Items
+      '@parentSchemaName': dyn365bc_item_v2_0
+      '@parentDisplayName': Item
+      '@solution': MicrosoftBusinessCentralERPVE (1.0.0.0)
+      '@id': '{dbe9b1d2-4556-3bc1-db2c-702205fd958b}'
+      package:
+        '@appName': Microsoft Business Central Virtual Table
+        '@version': 1.0.25316.1
+        '#text': MicrosoftBusinessCentralVEAnchor (1.0.25316.1)
+    Dependent:
+      '@type': powerpagecomponent
+      '@id': '{5ef39f3d-a883-4d92-88c4-9a432972293c}'
+  - Required:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced) - Japanese
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      '@id': '{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}'
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced) - Japanese
+      '@parentDisplayName': Contact
+      '@id': '{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}'
+  - Required:
+      '@type': 60
+      '@displayName': Information
+      '@parentDisplayName': Contact
+      '@solution': msdynce_AppCommon (9.0.4.0066)
+      '@id': '{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}'
+      package:
+        '@appName': msdynce_AppCommon
+        '@version': 9.0.26051.10001
+        '#text': msdynce_AppCommonAnchor (9.0.26051.10001)
+    Dependent:
+      '@type': 60
+      '@displayName': Information
+      '@parentDisplayName': Contact
+      '@id': '{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}'
+  - Required:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced)
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      '@id': '{bddc0100-0dbe-4562-aafe-31d08c8ab506}'
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{bddc0100-0dbe-4562-aafe-31d08c8ab506}'
+  - Required:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 60
+      '@displayName': Invite Web Form
+      '@parentDisplayName': Contact
+      '@solution': PowerPages_RuntimeCore (1.0.2509.1)
+      '@id': '{d6190b35-9474-4098-9698-33f6627eb3bf}'
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Invite Web Form
+      '@parentDisplayName': Contact
+      '@id': '{d6190b35-9474-4098-9698-33f6627eb3bf}'
+  - Required:
+      '@type': 61
+      '@schemaName': AppCommon/Contact/Contact_main_system_library.js
+      '@displayName': AppCommon/Contact/Contact_main_system_library.js
+      '@solution': msdynce_AppCommon (9.0.4.0066)
+      package:
+        '@appName': msdynce_AppCommon
+        '@version': 9.0.26051.10001
+        '#text': msdynce_AppCommonAnchor (9.0.26051.10001)
+    Dependent:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced) - Japanese
+      '@parentDisplayName': Contact
+      '@id': '{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}'
+  - Required:
+      '@type': 61
+      '@schemaName': AppCommon/Contact/Contact_main_system_library.js
+      '@displayName': AppCommon/Contact/Contact_main_system_library.js
+      '@solution': msdynce_AppCommon (9.0.4.0066)
+      package:
+        '@appName': msdynce_AppCommon
+        '@version': 9.0.26051.10001
+        '#text': msdynce_AppCommonAnchor (9.0.26051.10001)
+    Dependent:
+      '@type': 60
+      '@displayName': Information
+      '@parentDisplayName': Contact
+      '@id': '{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}'
+  - Required:
+      '@type': 61
+      '@schemaName': AppCommon/Contact/Contact_main_system_library.js
+      '@displayName': AppCommon/Contact/Contact_main_system_library.js
+      '@solution': msdynce_AppCommon (9.0.4.0066)
+      package:
+        '@appName': msdynce_AppCommon
+        '@version': 9.0.26051.10001
+        '#text': msdynce_AppCommonAnchor (9.0.26051.10001)
+    Dependent:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{bddc0100-0dbe-4562-aafe-31d08c8ab506}'
+  - Required:
+      '@type': 61
+      '@schemaName': AppCommon/Contact/Contact_main_system_library.js
+      '@displayName': AppCommon/Contact/Contact_main_system_library.js
+      '@solution': msdynce_AppCommon (9.0.4.0066)
+      package:
+        '@appName': msdynce_AppCommon
+        '@version': 9.0.26051.10001
+        '#text': msdynce_AppCommonAnchor (9.0.26051.10001)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 61
+      '@schemaName': msdyn_/ActivityFeeds.Form.js
+      '@displayName': msdyn_/ActivityFeeds.Form.js
+      '@solution': ActivityFeedsCore (9.0.0.0011)
+      package:
+        '@appName': ActivityFeedsCore
+        '@version': 9.0.0.0011
+        '#text': ActivityFeedsCore (9.0.0.0011)
+    Dependent:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced) - Japanese
+      '@parentDisplayName': Contact
+      '@id': '{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}'
+  - Required:
+      '@type': 61
+      '@schemaName': msdyn_/ActivityFeeds.Form.js
+      '@displayName': msdyn_/ActivityFeeds.Form.js
+      '@solution': ActivityFeedsCore (9.0.0.0011)
+      package:
+        '@appName': ActivityFeedsCore
+        '@version': 9.0.0.0011
+        '#text': ActivityFeedsCore (9.0.0.0011)
+    Dependent:
+      '@type': 60
+      '@displayName': Information
+      '@parentDisplayName': Contact
+      '@id': '{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}'
+  - Required:
+      '@type': 61
+      '@schemaName': msdyn_/ActivityFeeds.Form.js
+      '@displayName': msdyn_/ActivityFeeds.Form.js
+      '@solution': ActivityFeedsCore (9.0.0.0011)
+      package:
+        '@appName': ActivityFeedsCore
+        '@version': 9.0.0.0011
+        '#text': ActivityFeedsCore (9.0.0.0011)
+    Dependent:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{bddc0100-0dbe-4562-aafe-31d08c8ab506}'
+  - Required:
+      '@type': 61
+      '@schemaName': msdyn_/ActivityFeeds.Form.js
+      '@displayName': msdyn_/ActivityFeeds.Form.js
+      '@solution': ActivityFeedsCore (9.0.0.0011)
+      package:
+        '@appName': ActivityFeedsCore
+        '@version': 9.0.0.0011
+        '#text': ActivityFeedsCore (9.0.0.0011)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 61
+      '@schemaName': msdyn_/ActivityFeeds.Form.js
+      '@displayName': msdyn_/ActivityFeeds.Form.js
+      '@solution': ActivityFeedsCore (9.0.0.0011)
+      package:
+        '@appName': ActivityFeedsCore
+        '@version': 9.0.0.0011
+        '#text': ActivityFeedsCore (9.0.0.0011)
+    Dependent:
+      '@type': 60
+      '@displayName': Invite Web Form
+      '@parentDisplayName': Contact
+      '@id': '{d6190b35-9474-4098-9698-33f6627eb3bf}'
+  - Required:
+      '@type': 61
+      '@schemaName': msdyn_/RecordWall.htm
+      '@displayName': msdyn_/RecordWall.htm
+      '@solution': ActivityFeedsCore (9.0.0.0011)
+      package:
+        '@appName': ActivityFeedsCore
+        '@version': 9.0.0.0011
+        '#text': ActivityFeedsCore (9.0.0.0011)
+    Dependent:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced) - Japanese
+      '@parentDisplayName': Contact
+      '@id': '{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}'
+  - Required:
+      '@type': 61
+      '@schemaName': msdyn_/RecordWall.htm
+      '@displayName': msdyn_/RecordWall.htm
+      '@solution': ActivityFeedsCore (9.0.0.0011)
+      package:
+        '@appName': ActivityFeedsCore
+        '@version': 9.0.0.0011
+        '#text': ActivityFeedsCore (9.0.0.0011)
+    Dependent:
+      '@type': 60
+      '@displayName': Information
+      '@parentDisplayName': Contact
+      '@id': '{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}'
+  - Required:
+      '@type': 61
+      '@schemaName': msdyn_/RecordWall.htm
+      '@displayName': msdyn_/RecordWall.htm
+      '@solution': ActivityFeedsCore (9.0.0.0011)
+      package:
+        '@appName': ActivityFeedsCore
+        '@version': 9.0.0.0011
+        '#text': ActivityFeedsCore (9.0.0.0011)
+    Dependent:
+      '@type': 60
+      '@displayName': Profile Web Form (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{bddc0100-0dbe-4562-aafe-31d08c8ab506}'
+  - Required:
+      '@type': 61
+      '@schemaName': msdyn_/RecordWall.htm
+      '@displayName': msdyn_/RecordWall.htm
+      '@solution': ActivityFeedsCore (9.0.0.0011)
+      package:
+        '@appName': ActivityFeedsCore
+        '@version': 9.0.0.0011
+        '#text': ActivityFeedsCore (9.0.0.0011)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'
+  - Required:
+      '@type': 61
+      '@schemaName': msdyn_/RecordWall.htm
+      '@displayName': msdyn_/RecordWall.htm
+      '@solution': ActivityFeedsCore (9.0.0.0011)
+      package:
+        '@appName': ActivityFeedsCore
+        '@version': 9.0.0.0011
+        '#text': ActivityFeedsCore (9.0.0.0011)
+    Dependent:
+      '@type': 60
+      '@displayName': Invite Web Form
+      '@parentDisplayName': Contact
+      '@id': '{d6190b35-9474-4098-9698-33f6627eb3bf}'
+  - Required:
+      '@type': 61
+      '@schemaName': mspp_entities/subgrid_filtering.js
+      '@displayName': mspp_entities/subgrid_filtering.js
+      '@solution': PowerPages_AppResources (1.0.2602.3)
+      package:
+        '@appName': Power Pages Core Package
+        '@version': 1.1.2602.237
+        '#text': PowerPages_Core (1.1.2602.237)
+    Dependent:
+      '@type': 60
+      '@displayName': Portal Contact (Enhanced)
+      '@parentDisplayName': Contact
+      '@id': '{c1c97961-2d42-4103-abf8-2fe2bdf38224}'

@@ -1,0 +1,55 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 0
+  savedqueryid: '{05922252-c886-f011-b4cc-000d3ad1e145}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': ldw_name
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': ldw_cartid
+        cell:
+        - '@name': ldw_name
+          '@width': 200
+        - '@name': ldw_status
+          '@width': 100
+        - '@name': ldw_contact
+          '@width': 100
+        - '@name': ldw_grandtotal
+          '@width': 108
+        - '@name': ldw_externalorderno
+          '@width': 145
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@output-format': xml-platform
+      '@mapping': logical
+      '@distinct': true
+      entity:
+        '@name': ldw_cart
+        attribute:
+        - '@name': ldw_name
+        - '@name': ldw_cartid
+        - '@name': ldw_status
+        - '@name': ldw_contact
+        - '@name': ldw_grandtotal
+        - '@name': ldw_externalorderno
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0.0.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Active Carts (ldw_status)
+      '@languagecode': 1033

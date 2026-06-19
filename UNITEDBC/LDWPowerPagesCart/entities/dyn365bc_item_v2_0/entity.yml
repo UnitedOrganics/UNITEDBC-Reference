@@ -1,0 +1,9 @@
+Entity:
+  Name:
+    '@LocalizedName': Item
+    '@OriginalName': Item
+    '#text': dyn365bc_item_v2_0
+  EntityInfo:
+    entity:
+      '@Name': dyn365bc_item_v2_0
+      '@unmodified': 1

@@ -1,0 +1,62 @@
+RootComponents:
+  RootComponent:
+  - '@type': 1
+    '@schemaName': contact
+    '@behavior': 2
+  - '@type': 1
+    '@schemaName': dyn365bc_item_v2_0
+    '@behavior': 2
+  - '@type': 1
+    '@schemaName': ldw_bcwebcategorymap
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': ldw_cart
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': ldw_cartline2
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': ldw_catalogitem
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': ldw_checkoutrequest
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': ldw_publicprice
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': ldw_publicpricetier
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': ldw_webcategory1
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': ldw_webdepartment1
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': pricelevel
+    '@behavior': 2
+  - '@type': 1
+    '@schemaName': product
+    '@behavior': 2
+  - '@type': 1
+    '@schemaName': transactioncurrency
+    '@behavior': 2
+  - '@type': 9
+    '@schemaName': ldw_defaultportalstatus
+    '@behavior': 0
+  - '@type': 9
+    '@schemaName': ldw_pureportalbehaivour
+    '@behavior': 0
+  - '@type': 9
+    '@schemaName': ldw_standardportalstatus
+    '@behavior': 0
+  - '@type': 29
+    '@id': '{0299a8be-904e-f111-bec6-6045bdc46c25}'
+    '@behavior': 0
+  - '@type': 29
+    '@id': '{a918643d-618c-f011-b4cb-7ced8d330a7e}'
+    '@behavior': 0
+  - '@type': 29
+    '@id': '{df961fcb-8526-f111-88b4-6045bde5f52c}'
+    '@behavior': 0

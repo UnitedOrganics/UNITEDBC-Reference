@@ -1,0 +1,60 @@
+systemform:
+  formid: '{1c0211e8-7324-422c-a308-906434ba9275}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{a86baffb-979b-4574-abba-65a51186856e}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': General
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{c95fafbd-aa79-4524-9f55-ef82eb72aed5}'
+                labels:
+                  label:
+                    '@description': General
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{68d34b8f-3d1a-4168-b0aa-c42f4097d3c3}'
+                      labels:
+                        label:
+                          '@description': Web Department Name
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_webdepartmentname
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': ldw_webdepartmentname
+                  - cell:
+                      '@id': '{63bc7e3d-cfaf-40db-a8bb-bba1beb7218e}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': A form for this entity.
+      '@languagecode': 1033

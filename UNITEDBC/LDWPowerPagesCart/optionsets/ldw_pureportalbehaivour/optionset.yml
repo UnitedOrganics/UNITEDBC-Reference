@@ -1,0 +1,40 @@
+optionset:
+  '@Name': ldw_pureportalbehaivour
+  '@localizedName': Pure Portal Behaivour
+  OptionSetType: picklist
+  IsGlobal: 1
+  IntroducedVersion: 1.0.0.0
+  IsCustomizable: 1
+  ExternalTypeName: ''
+  displaynames:
+    displayname:
+      '@description': Pure Portal Behaivour
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': ''
+      '@languagecode': 1033
+  options:
+    option:
+    - '@value': 852310000
+      '@ExternalValue': ''
+      '@IsHidden': 0
+      labels:
+        label:
+          '@description': InStockOnly
+          '@languagecode': 1033
+      Descriptions:
+        Description:
+          '@description': ''
+          '@languagecode': 1033
+    - '@value': 852310001
+      '@ExternalValue': ''
+      '@IsHidden': 0
+      labels:
+        label:
+          '@description': AllowBackorder
+          '@languagecode': 1033
+      Descriptions:
+        Description:
+          '@description': ''
+          '@languagecode': 1033

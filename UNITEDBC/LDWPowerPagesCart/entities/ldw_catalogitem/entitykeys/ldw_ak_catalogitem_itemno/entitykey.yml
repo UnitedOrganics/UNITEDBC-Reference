@@ -1,0 +1,11 @@
+EntityKey:
+  Name: ldw_ak_catalogitem_itemno
+  LogicalName: ldw_ak_catalogitem_itemno
+  IntroducedVersion: 1.0.0.0
+  IsCustomizable: 0
+  EntityKeyAttributes:
+    AttributeName: ldw_bcitemid
+  displaynames:
+    displayname:
+      '@description': ak_catalogitem_itemno
+      '@languagecode': 1033

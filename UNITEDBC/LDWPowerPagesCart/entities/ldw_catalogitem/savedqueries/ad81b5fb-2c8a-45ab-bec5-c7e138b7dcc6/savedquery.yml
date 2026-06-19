@@ -1,0 +1,47 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{ad81b5fb-2c8a-45ab-bec5-c7e138b7dcc6}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': ldw_name
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': ldw_catalogitemid
+        cell:
+        - '@name': ldw_name
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': ldw_catalogitem
+        attribute:
+        - '@name': ldw_catalogitemid
+        - '@name': ldw_name
+        - '@name': createdon
+        order:
+          '@attribute': ldw_name
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Active Catalog Items
+      '@languagecode': 1033

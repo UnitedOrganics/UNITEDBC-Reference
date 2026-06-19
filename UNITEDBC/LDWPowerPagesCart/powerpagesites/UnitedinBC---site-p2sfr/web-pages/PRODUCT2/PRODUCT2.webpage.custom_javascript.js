@@ -1,0 +1,2 @@
+alert('PRODUCT2 CUSTOM JS LOADED v400');
+console.log('TEX400_MAIN');

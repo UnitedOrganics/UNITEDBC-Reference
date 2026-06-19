@@ -1,0 +1,41 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{fcde7c66-5113-4264-82ec-a9c308a01806}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': ldw_webdepartmentname
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': ldw_webdepartment1id
+        cell:
+        - '@name': ldw_webdepartmentname
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 1
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': ldw_webdepartment1
+        attribute:
+        - '@name': ldw_webdepartment1id
+        - '@name': ldw_webdepartmentname
+        - '@name': createdon
+        order:
+          '@attribute': ldw_webdepartmentname
+          '@descending': false
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Web Department Advanced Find View
+      '@languagecode': 1033

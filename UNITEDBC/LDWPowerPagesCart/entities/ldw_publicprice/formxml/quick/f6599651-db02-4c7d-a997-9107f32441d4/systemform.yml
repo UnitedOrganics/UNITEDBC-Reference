@@ -1,0 +1,56 @@
+systemform:
+  formid: '{f6599651-db02-4c7d-a997-9107f32441d4}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{04069483-033f-4e59-a7b6-d07b6a7c5579}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': ''
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{6543ab39-d095-4380-be1b-b908cf23d32b}'
+                labels:
+                  label:
+                    '@description': GENERAL
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{22afc069-59ff-434d-b9c2-1df1c97085fa}'
+                      labels:
+                        label:
+                          '@description': BC Item No
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_bcitemno
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': ldw_bcitemno
+                  - cell:
+                      '@id': '{2fd1a7dd-4485-4ff2-92a8-2a7adda1d1d0}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033

@@ -1,0 +1,56 @@
+systemform:
+  formid: '{3ae05186-3a2f-4b0e-9c7a-8f18ccddeaf1}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{d4035627-78ad-43bc-b114-4b9075748151}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': ''
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{d29c6775-4e7b-4a83-8026-72c5a355138c}'
+                labels:
+                  label:
+                    '@description': GENERAL
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{ee9e4a67-b3d4-45db-89c2-ca3cb77811fd}'
+                      labels:
+                        label:
+                          '@description': Web Department Name
+                          '@languagecode': 1033
+                      control:
+                        '@id': ldw_webdepartmentname
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': ldw_webdepartmentname
+                  - cell:
+                      '@id': '{d97e5d24-96e7-4e3d-9acd-83d796c84a25}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033

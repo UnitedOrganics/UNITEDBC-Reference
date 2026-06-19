@@ -1,0 +1,45 @@
+{% assign token = user | antiforgerytoken %}
+
+<script>
+  window.__pp = {
+    antiForgery: "{{ token }}",
+    contactId: "{{ user.contact.id }}"
+  };
+</script>
+
+<div class="container py-4">
+  <h1 class="mb-4">My Cart6</h1>
+
+  <div id="cartMessages" class="mb-3"></div>
+
+  <div id="cartLoading">Loading cart...</div>
+
+  <div id="cartEmpty" style="display:none;">
+    <p>Your cart is empty.</p>
+  </div>
+
+  <div id="cartContent" style="display:none;">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Code</th>
+          <th>Qty</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="cartTableBody"></tbody>
+    </table>
+
+    <div class="text-end">
+      <strong>Subtotal: </strong>
+      <span id="cartSubtotal">$0.00</span>
+    </div>
+
+    <button id="checkoutBtn" class="btn btn-primary mt-3" type="button">
+      Checkout
+    </button>
+  </div>
+</div>

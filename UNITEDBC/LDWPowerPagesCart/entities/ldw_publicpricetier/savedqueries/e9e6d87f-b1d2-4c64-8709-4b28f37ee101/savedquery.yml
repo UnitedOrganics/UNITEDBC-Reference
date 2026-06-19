@@ -1,0 +1,53 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 1
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{e9e6d87f-b1d2-4c64-8709-4b28f37ee101}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': ldw_bc_itemno
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': ldw_publicpricetierid
+        cell:
+        - '@name': ldw_bc_itemno
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 4
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': ldw_publicpricetier
+        attribute:
+        - '@name': ldw_publicpricetierid
+        - '@name': ldw_bc_itemno
+        - '@name': createdon
+        order:
+          '@attribute': ldw_bc_itemno
+          '@descending': false
+        filter:
+        - '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+        - '@type': or
+          '@isquickfindfields': 1
+          condition:
+            '@attribute': ldw_bc_itemno
+            '@operator': like
+            '@value': '{0}'
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Quick Find Active Public Price Tiers
+      '@languagecode': 1033

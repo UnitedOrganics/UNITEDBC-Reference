@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>SMTP Test Page</h2>
+  <p>Click below to test email delivery from your Power Pages SMTP configuration.</p>
+
+  <form method="post">
+    <input type="submit" value="Send Test Email" class="btn btn-primary" />
+  </form>
+
+  {% if request.method == "POST" %} {% assign email = entities.email.new %} {% do email.set "subject" "SMTP Test - Power Pages" %} {% do email.set "description" "
+  <p>This is a test email from Power Pages SMTP configuration.</p>
+  " %} {% do email.set "directioncode" true %} {% do email.set "to" "lloyd@unitedorganics.com.au" %} {% do email.set "from" "lloyd@unitedorganics.com.au" %} {% do email.save %}
+  <div class="alert alert-info mt-3">Email created in Dataverse. Check <strong>Email Messages</strong> for status.</div>
+  {% endif %}
+</div>
+<div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container" style="padding: 0px; display: flex; flex-wrap: wrap;"><div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px;"></div></div>
+</div>
+<div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container" style="padding: 0px; display: flex; flex-wrap: wrap;"><div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px;"></div></div>
+</div>

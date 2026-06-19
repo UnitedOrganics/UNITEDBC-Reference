@@ -1,0 +1,15 @@
+﻿displayorder: 5
+enablerating: false
+enabletracking: false
+excludefromsearch: false
+hiddenfromsitemap: true
+id: 0a77a559-6c98-e2e8-d5dd-0f3396af9a3a
+isroot: true
+name: My Orders
+pagetemplateid: 7167ad7a-3d9c-41da-801c-648e4ae0e006
+parentpageid: 4ada0128-3d83-4fcf-89e2-8f22749538fe
+partialurl: My-Orders
+publishingstateid: 1593187c-176c-4086-babf-ddea18bc008b
+sharedpageconfiguration: false
+title: My Orders
+websiteid: <SANITIZED_GUID>

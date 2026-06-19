@@ -1,0 +1,16 @@
+﻿adx_entitypermission_webrole:
+- bd34323d-4cf9-4c9f-afd4-c48343edb2f6
+append: true
+appendto: true
+contactrelationship: ldw_cart_contact_contact
+create: true
+delete: false
+entitylogicalname: ldw_cart
+entityname: Cart (Contact scope)
+id: 1aa107b3-87aa-484c-ad9d-18461a88f60d
+name: Cart (Contact scope)
+parententitypermission: 
+read: true
+scope: 756150001
+websiteid: <SANITIZED_GUID>
+write: true

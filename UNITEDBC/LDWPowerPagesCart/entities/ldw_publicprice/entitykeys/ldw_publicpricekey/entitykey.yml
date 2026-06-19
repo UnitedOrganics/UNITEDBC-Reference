@@ -1,0 +1,15 @@
+EntityKey:
+  Name: ldw_publicpricekey
+  LogicalName: ldw_publicpricekey
+  IntroducedVersion: 1.0.0.0
+  IsCustomizable: 0
+  EntityKeyAttributes:
+    AttributeName:
+    - ldw_bcitemno
+    - ldw_currencycode
+    - ldw_pricelistcode
+    - ldw_uom
+  displaynames:
+    displayname:
+      '@description': Public Price Key
+      '@languagecode': 1033

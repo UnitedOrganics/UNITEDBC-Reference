@@ -1,0 +1,53 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 1
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{a1c0d14e-ba56-4242-bd7b-5bbb9aac7652}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': ldw_webcategoryname
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': ldw_webcategory1id
+        cell:
+        - '@name': ldw_webcategoryname
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 4
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': ldw_webcategory1
+        attribute:
+        - '@name': ldw_webcategory1id
+        - '@name': ldw_webcategoryname
+        - '@name': createdon
+        order:
+          '@attribute': ldw_webcategoryname
+          '@descending': false
+        filter:
+        - '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+        - '@type': or
+          '@isquickfindfields': 1
+          condition:
+            '@attribute': ldw_webcategoryname
+            '@operator': like
+            '@value': '{0}'
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Quick Find Active Web Categories
+      '@languagecode': 1033

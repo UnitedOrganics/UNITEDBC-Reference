@@ -1,0 +1,31 @@
+EntityRelationship:
+  '@Name': ldw_bcwebcategorymap_ldw_webcategory_ldw_webcategory1
+  EntityRelationshipType: OneToMany
+  IsCustomizable: 1
+  IntroducedVersion: 1.0
+  IsHierarchical: 0
+  ReferencingEntityName: ldw_BCWebCategoryMap
+  ReferencedEntityName: ldw_WebCategory1
+  CascadeAssign: NoCascade
+  CascadeDelete: RemoveLink
+  CascadeArchive: RemoveLink
+  CascadeReparent: NoCascade
+  CascadeShare: NoCascade
+  CascadeUnshare: NoCascade
+  CascadeRollupView: NoCascade
+  IsValidForAdvancedFind: 1
+  ReferencingAttributeName: ldw_WebCategory
+  RelationshipDescription:
+    Descriptions:
+      Description:
+        '@description': ''
+        '@languagecode': 1033
+  EntityRelationshipRoles:
+    EntityRelationshipRole:
+    - NavPaneDisplayOption: UseCollectionName
+      NavPaneArea: Details
+      NavPaneOrder: 10000
+      NavigationPropertyName: ldw_WebCategory
+      RelationshipRoleType: 1
+    - NavigationPropertyName: ldw_bcwebcategorymap_ldw_webcategory_ldw_webcategory1
+      RelationshipRoleType: 0

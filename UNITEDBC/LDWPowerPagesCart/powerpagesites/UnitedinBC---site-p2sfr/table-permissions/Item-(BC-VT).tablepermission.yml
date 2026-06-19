@@ -1,0 +1,16 @@
+﻿adx_entitypermission_webrole:
+- 1db45901-c342-4a95-a0f8-cb4729d7a7b9
+- bd34323d-4cf9-4c9f-afd4-c48343edb2f6
+append: false
+appendto: false
+create: false
+delete: false
+entitylogicalname: dyn365bc_item_v2_0
+entityname: Item (BC VT)
+id: d18c6be0-f7a2-4c2c-aa20-d2aef6bc670d
+name: Item (BC VT)
+parententitypermission: 
+read: true
+scope: 756150000
+websiteid: <SANITIZED_GUID>
+write: false

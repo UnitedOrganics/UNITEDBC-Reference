@@ -1,0 +1,19 @@
+{% assign token = user | antiforgerytoken %}
+{% assign cid = user.contact.id | default: '' %}
+
+<input type="hidden" id="pp-af" name="__RequestVerificationToken" value="{{ token }}">
+
+<script>
+  window.__pp = window.__pp || {};
+  window.__pp.antiForgery = "{{ token }}";
+  // remove curly braces safely via Liquid (no commas)
+  window.__pp.contactId = "{{ cid | remove: '{' | remove: '}' }}";
+</script>
+<div class="row sectionBlockLayout text-start" style="display:flex;flex-wrap:wrap;margin:0;padding:8px;">
+  <p>329</p>
+  <div class="container" style="display:flex;flex-wrap:wrap;">
+    <div class="col-lg-12 columnBlockLayout" style="padding:16px;margin:60px 0;">
+      <div id="catalog"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+attribute:
+  '@PhysicalName': ldw_tax_Base
+  Type: money
+  Name: ldw_tax_base
+  LogicalName: ldw_tax_base
+  RequiredLevel: none
+  DisplayMask: ValidForForm|ValidForGrid
+  ImeMode: disabled
+  ValidForUpdateApi: 0
+  ValidForReadApi: 1
+  ValidForCreateApi: 0
+  IsCustomField: 1
+  IsAuditEnabled: 1
+  IsSecured: 0
+  IntroducedVersion: 1.0.0.0
+  IsCustomizable: 1
+  IsRenameable: 1
+  CanModifySearchSettings: 1
+  CanModifyRequirementLevelSettings: 1
+  CanModifyAdditionalSettings: 1
+  SourceType: 0
+  IsGlobalFilterEnabled: 0
+  IsSortableEnabled: 0
+  CanModifyGlobalFilterSettings: 1
+  CanModifyIsSortableSettings: 1
+  IsDataSourceSecret: 0
+  IsSearchable: 0
+  IsFilterable: 0
+  IsRetrievable: 0
+  IsLocalizable: 0
+  MinValue: -922337203685477
+  MaxValue: 922337203685477
+  Accuracy: 2
+  AccuracySource: 2
+  CalculationOf: ldw_tax
+  displaynames:
+    displayname:
+      '@description': Tax (Base)
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': Value of the Tax in base currency.
+      '@languagecode': 1033

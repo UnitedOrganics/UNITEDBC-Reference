@@ -1,0 +1,9 @@
+Entity:
+  Name:
+    '@LocalizedName': Price List
+    '@OriginalName': Price List
+    '#text': PriceLevel
+  EntityInfo:
+    entity:
+      '@Name': PriceLevel
+      '@unmodified': 1

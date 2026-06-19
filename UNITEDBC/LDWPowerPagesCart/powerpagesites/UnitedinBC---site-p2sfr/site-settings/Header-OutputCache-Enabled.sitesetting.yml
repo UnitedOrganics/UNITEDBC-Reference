@@ -1,0 +1,5 @@
+﻿description: Set whether the header web template is output cached.
+id: 711d2d40-e17d-46df-a723-c169a31c637c
+name: Header/OutputCache/Enabled
+value: True
+websiteid: <SANITIZED_GUID>

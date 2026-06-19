@@ -1,0 +1,9 @@
+Entity:
+  Name:
+    '@LocalizedName': Currency
+    '@OriginalName': ''
+    '#text': TransactionCurrency
+  EntityInfo:
+    entity:
+      '@Name': TransactionCurrency
+      '@unmodified': 1
